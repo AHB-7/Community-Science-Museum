@@ -1,0 +1,72 @@
+@font-face {
+    font-family: play;
+    src: url(../Font/Play-Bold.ttf);
+}
+*,
+body {
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+}
+:root {
+    --green: #62ff68;
+    --www: white;
+    --ddd: black;
+}
+
+.brand {
+    color: var(--green);
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin: 1rem;
+}
+.black-bk {
+    position: absolute;
+    width: 100%;
+    height: 115vh;
+    background-color: black;
+    transform: skewY(-4deg);
+    transform-origin: top left;
+}
+.black-bk-content {
+    transform: skewY(4deg);
+    transform-origin: top left;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 4rem 0 4rem;
+}
+.nav-container > div {
+    display: flex;
+}
+.searrch-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: var(--www);
+    font-size: 1rem;
+    transition: 0.3s;
+    line-height: 3rem;
+    margin-right: -1rem;
+    width: 0rem;
+}
+.search-container:hover > .searrch-txt {
+    width: 9rem;
+    border-bottom: white 1px solid;
+}
+
+.nav-btn {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: var(--green);
+    font-size: 1.1rem;
+    font-family: play, sans-serif, serif;
+    transition: 0.2s;
+}
+.nav-btn:hover {
+    color: var(--www);
+}
