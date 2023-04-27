@@ -11,35 +11,47 @@ body {
 :root {
     --green: #62ff68;
     --www: white;
-    --ddd: black;
-}
-
-.brand {
-    color: var(--green);
-    font-size: 1.5rem;
-    margin-left: 1rem;
-    margin: 1rem;
+    --ddd: #0b0b0d;
+    --h1: 12rem;
 }
 .black-bk {
     position: absolute;
+    background: #000000;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    height: 135vh;
     width: 100%;
-    height: 115vh;
-    background-color: black;
-    transform: skewY(-4deg);
-    transform-origin: top left;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
-.black-bk-content {
-    transform: skewY(4deg);
-    transform-origin: top left;
-}
-.nav-container {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.5rem 4rem 0 4rem;
+    align-content: center;
+    margin: 2rem 3rem auto 3rem;
 }
-.nav-container > div {
+.search-contact-container {
     display: flex;
+    margin-right: 3rem;
+}
+.navigation-btn {
+    color: var(--green);
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: "play", sans-serif;
+    background-color: black;
+    margin-right: 1rem;
+}
+nav:last-child {
+    margin-right: 0;
+}
+.brand {
+    font-size: 1.3rem;
+    color: var(--green);
+}
+.search-container {
+    margin-right: 1rem;
 }
 .searrch-txt {
     border: none;
@@ -50,7 +62,7 @@ body {
     color: var(--www);
     font-size: 1rem;
     transition: 0.3s;
-    line-height: 3rem;
+    line-height: 1.8rem;
     margin-right: -1rem;
     width: 0rem;
 }
@@ -58,15 +70,53 @@ body {
     width: 9rem;
     border-bottom: white 1px solid;
 }
-
-.nav-btn {
-    text-decoration: none;
-    margin-right: 1rem;
-    color: var(--green);
-    font-size: 1.1rem;
-    font-family: play, sans-serif, serif;
-    transition: 0.2s;
+.for-phone {
+    display: none;
 }
-.nav-btn:hover {
-    color: var(--www);
+@media only screen and (min-width: 800px) and (max-width: 924px) {
+}
+@media only screen and (max-width: 685px) {
+    .no-phone,
+    .menu-container {
+        display: none;
+    }
+    .for-phone {
+        display: block;
+    }
+    .menu:first-child:checked ~ .menu-container {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        left: 0;
+        top: 0;
+        margin-top: 4rem;
+    }
+    .menu-container > a:first-child {
+        margin-top: 3rem;
+    }
+    .menu-container > a {
+        display: block;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .menu-btn:hover {
+        cursor: pointer;
+        filter: brightness(120%);
+    }
+    .search-container-for-phone {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .searrch-txt {
+        width: 15rem;
+    }
+    .search-container:hover > .searrch-txt {
+        width: 15rem;
+        border-bottom: white 1px solid;
+    }
 }

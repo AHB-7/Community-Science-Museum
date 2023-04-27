@@ -14,44 +14,61 @@
         ></script>
     </head>
     <body>
-        <nav>
-            <section class="black-bk">
-                <div class="black-bk-content">
-                    <div class="nav-container">
-                        <div>
-                            <a href="index.html" class="nav-btn">Home</a>
-                            <a href="html/exhibitions-News.html" class="nav-btn"
-                                >Exhibitions & News</a
-                            >
-                            <a href="html/visit.html" class="nav-btn">Visit</a>
-                            <a href="html/get-Involved.html" class="nav-btn"
-                                >Get involved</a
-                            >
-                        </div>
-                        <div>
-                            <div class="search-container">
-                                <input
-                                    type="text"
-                                    name="search"
-                                    placeholder="Type to search..."
-                                    class="searrch-txt"
-                                />
-                                <a href="#" class="search-btn">
-                                    <i
-                                        class="fa-solid fa-magnifying-glass brand"
-                                    ></i
-                                ></a>
-                            </div>
-                            <div>
-                                <a href="html/contact.html"
-                                    ><i class="fa-solid fa-phone brand"></i
-                                ></a>
-                            </div>
-                        </div>
+        <header>
+            <div class="black-bk"></div>
+            <nav>
+                <input
+                    type="checkbox"
+                    style="display: none"
+                    id="navigation-toggle"
+                    class="menu"
+                />
+                <label for="navigation-toggle" class="for-phone menu-btn">
+                    <i class="fa-solid fa-bars brand"></i>
+                </label>
+                <div class="menu-container">
+                    <a href="index.html" class="navigation-btn">Home</a>
+                    <a href="/html/exhibitions-News.html" class="navigation-btn"
+                        >Exhibitions&News</a
+                    >
+                    <a href="/html/visit.html" class="navigation-btn">Visit</a>
+                    <a href="/html/get-Involved.html" class="navigation-btn"
+                        >Get involved</a
+                    >
+                    <div
+                        class="search-container for-phone search-container-for-phone"
+                    >
+                        <input
+                            type="text"
+                            name="search"
+                            placeholder="Type to search..."
+                            class="searrch-txt"
+                        />
+                        <a href="#" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass brand"></i
+                        ></a>
                     </div>
                 </div>
-            </section>
-        </nav>
+                <div class="search-contact-container">
+                    <div class="search-container no-phone">
+                        <input
+                            type="text"
+                            name="search"
+                            placeholder="Type to search..."
+                            class="searrch-txt"
+                        />
+                        <a href="#" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass brand"></i
+                        ></a>
+                    </div>
+                    <div>
+                        <a href="html/contact.html"
+                            ><i class="fa-solid fa-phone brand"></i
+                        ></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <main></main>
         <footer></footer>
     </body>
