@@ -113,10 +113,10 @@ nav:last-child {
         transform: translateX(-50%);
     }
     .searrch-txt {
-        width: 15rem;
+        width: auto;
     }
     .search-container:hover > .searrch-txt {
-        width: 15rem;
+        width: auto;
         border-bottom: white 1px solid;
     }
 }
