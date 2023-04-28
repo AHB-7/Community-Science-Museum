@@ -7,29 +7,51 @@ body {
     margin: 0;
     padding: 0;
     display: flexbox;
+    overflow-x: hidden;
 }
 :root {
     --green: #62ff68;
     --www: white;
     --ddd: #0b0b0d;
     --h1: 12rem;
+    --h2: 3.5rem;
 }
+h1,
+h2,
+h3,
+h3,
+p {
+    font-family: play, sans-serif;
+}
+/*header style */
 .black-bk {
     position: absolute;
-    background: #000000;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-    height: 135vh;
+    background: var(--ddd);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    height: 44.5rem;
     width: 100%;
     top: 0;
     left: 0;
     z-index: -1;
+    animation: down linear 2s;
+}
+@keyframes down {
+    0% {
+        transform: translateY(-1000px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
-    margin: 2rem 3rem auto 3rem;
+    margin: 2rem auto auto auto;
 }
 .search-contact-container {
     display: flex;
@@ -40,7 +62,7 @@ nav {
     font-size: 1rem;
     text-decoration: none;
     font-family: "play", sans-serif;
-    background-color: black;
+    background-color: var(--ddd);
     margin-right: 1rem;
 }
 nav:last-child {
@@ -73,8 +95,45 @@ nav:last-child {
 .for-phone {
     display: none;
 }
-@media only screen and (min-width: 800px) and (max-width: 924px) {
+.for-logo-and-moon {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 4rem;
+    overflow: hidden;
 }
+.moon {
+    max-width: 23rem;
+    height: auto;
+    animation: rotate 17s linear infinite, down 3s linear;
+    z-index: -1;
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+.logo {
+    width: 17rem;
+    margin-left: 1.3rem;
+    animation: down linear 2s;
+}
+/*Section 1 style*/
+.explore-section-container {
+    margin-top: 8rem;
+}
+.explore {
+    font-size: var(--h2);
+    float: right;
+    margin-right: 20%;
+}
+
 @media only screen and (max-width: 685px) {
     .no-phone,
     .menu-container {
@@ -91,6 +150,7 @@ nav:last-child {
         left: 0;
         top: 0;
         margin-top: 4rem;
+        background-color: var(--ddd);
     }
     .menu-container > a:first-child {
         margin-top: 3rem;
@@ -118,5 +178,26 @@ nav:last-child {
     .search-container:hover > .searrch-txt {
         width: auto;
         border-bottom: white 1px solid;
+    }
+    nav {
+        margin: 2rem 4rem auto 4rem;
+        justify-content: space-between;
+    }
+    .search-contact-container {
+        margin: 0;
+    }
+    .for-logo-and-moon {
+        margin-top: 1rem;
+    }
+    .moon {
+        width: 23rem;
+    }
+    .logo {
+        width: 12rem;
+        margin-right: 6rem;
+    }
+    .explore {
+        font-size: 3rem;
+        margin-right: 2rem;
     }
 }
