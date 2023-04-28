@@ -30,12 +30,19 @@ p {
     position: absolute;
     background: var(--ddd);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    height: 48.5rem;
+    height: 110%;
     width: 120%;
     top: 0;
     left: 0;
     z-index: -1;
     animation: down linear 2s;
+}
+header {
+    z-index: 0;
+    height: 42rem;
+    background: #0b0b0d;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+    overflow: hidden;
 }
 @keyframes down {
     0% {
@@ -53,11 +60,10 @@ nav {
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    margin: 2rem auto auto auto;
+    margin: 2rem auto;
 }
 .search-contact-container {
     display: flex;
-    margin-right: 3rem;
 }
 .navigation-btn {
     color: var(--green);
@@ -95,26 +101,31 @@ nav:last-child {
 }
 .search-container:hover > .searrch-txt {
     width: 9rem;
-    border-bottom: white 1px solid;
+    border-bottom: var(--www) 1px solid;
 }
 .for-phone {
     display: none;
 }
 .for-logo-and-moon {
     display: flex;
-    flex-wrap: wrap-reverse;
     justify-content: space-around;
+    flex-wrap: wrap-reverse;
     align-items: center;
     overflow: hidden;
-    height: 90vh;
+    margin: auto 4rem;
 }
 .moon {
     max-width: 23rem;
     height: auto;
     animation: rotate 17s linear infinite, down 3s linear;
-    z-index: -1;
+    z-index: 0;
 }
-
+.logo {
+    width: 20rem;
+    margin-left: 1.3rem;
+    animation: down linear 2s;
+    margin-top: 13rem;
+}
 @keyframes rotate {
     0% {
         rotate: 0deg;
@@ -124,23 +135,33 @@ nav:last-child {
         rotate: 360deg;
     }
 }
-.logo {
-    width: 17rem;
-    margin-left: 1.3rem;
-    animation: down linear 2s;
-    margin-top: 7rem;
-}
+
 /*Section 1 style*/
 .explore-section-container {
-    margin-top: 2rem;
+    margin-top: -2rem;
+    z-index: 4;
 }
 .explore {
     font-size: var(--h2);
     float: right;
     margin-right: 10%;
 }
-
-@media only screen and (max-width: 685px) {
+@media only screen and (max-width: 855px) {
+    .moon {
+        width: 19rem;
+    }
+    .logo {
+        width: 12rem;
+        margin-right: 6rem;
+        margin-top: 4rem;
+    }
+    .for-logo-and-moon {
+        flex-wrap: wrap-reverse;
+        margin-top: 5rem;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 600px) {
     .no-phone,
     .menu-container {
         display: none;
@@ -157,6 +178,7 @@ nav:last-child {
         top: 0;
         margin-top: 4rem;
         background-color: var(--ddd);
+        z-index: 2;
     }
     .menu-container > a:first-child {
         margin-top: 3rem;
@@ -183,25 +205,23 @@ nav:last-child {
     }
     .search-container:hover > .searrch-txt {
         width: auto;
-        border-bottom: white 1px solid;
+        border-bottom: var(--www) 1px solid;
     }
+
     nav {
-        margin: 2rem 4rem auto 4rem;
+        margin: 2rem 2rem 0 2rem;
         justify-content: space-between;
     }
     .search-contact-container {
         margin: 0;
     }
     .for-logo-and-moon {
+        flex-wrap: wrap-reverse;
         margin-top: 1rem;
-    }
-    .moon {
-        width: 23rem;
+        justify-content: space-around;
     }
     .logo {
-        width: 12rem;
-        margin-right: 6rem;
-        margin-top: 0;
+        margin-top: 4rem;
     }
     .explore-section-container {
     }
