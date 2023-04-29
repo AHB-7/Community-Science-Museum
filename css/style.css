@@ -2,6 +2,9 @@
     font-family: play;
     src: url(../Font/Play-Bold.ttf);
 }
+html {
+    background: var(--ddd);
+}
 *,
 body {
     margin: 0;
@@ -25,6 +28,7 @@ h3,
 p {
     font-family: play, sans-serif;
 }
+
 /*header style */
 
 .black-bk {
@@ -126,16 +130,43 @@ nav:last-child {
 
 /*Section 1 style*/
 .explore-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 0rem;
+    height: fit-content;
 }
 .explore {
     font-size: var(--h2);
-    float: right;
-    margin-right: 15%;
+    margin-bottom: 2rem;
+}
+.explore-txt {
+    max-width: 26rem;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.explore-icons {
+    max-width: 10rem;
+    margin-right: 1rem;
+}
+.explore-icons:last-child {
+    margin-right: 3rem;
 }
 @media only screen and (max-width: 855px) {
+    .explore-section-container {
+        flex-wrap: wrap-reverse;
+        margin-top: 1rem;
+        height: fit-content;
+    }
     .moon {
-        width: 19rem;
+        max-width: 19rem;
     }
     .logo {
         width: 12rem;
@@ -147,7 +178,11 @@ nav:last-child {
         margin: 0 auto;
         display: block;
     }
+    .flex-row {
+        margin-top: -4rem;
+    }
 }
+
 @media only screen and (max-width: 600px) {
     .no-phone,
     .menu-container {
@@ -216,5 +251,15 @@ nav:last-child {
     }
     .black-bk {
         height: 47rem;
+    }
+    .flex-row {
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        margin-top: -7rem;
+    }
+    .explore-icons-for-phone {
+        width: 18rem;
+        margin: 1rem auto 0rem auto;
     }
 }
