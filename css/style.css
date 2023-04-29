@@ -2,9 +2,7 @@
     font-family: play;
     src: url(../Font/Play-Bold.ttf);
 }
-html {
-    background: var(--ddd);
-}
+
 *,
 body {
     margin: 0;
