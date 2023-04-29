@@ -7,7 +7,6 @@
 body {
     margin: 0;
     padding: 0;
-    display: flexbox;
     overflow-x: hidden;
 }
 :root {
@@ -18,6 +17,7 @@ body {
     --h1-phone: 4.5rem;
     --h2: 3.5rem;
     --h2-phone: 2.5rem;
+    --p: 1.2rem;
 }
 h1,
 h2,
@@ -30,7 +30,7 @@ p {
 /*header style */
 
 .black-bk {
-    z-index: 0;
+    z-index: -1;
     height: 44rem;
     background: #0b0b0d;
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
@@ -118,11 +118,10 @@ nav:last-child {
 }
 @keyframes rotate {
     0% {
-        rotate: 0deg;
+        transform: rotate(0deg);
     }
-
     100% {
-        rotate: 360deg;
+        transform: rotate(360deg);
     }
 }
 
@@ -140,6 +139,7 @@ nav:last-child {
 }
 .explore-txt {
     max-width: 26rem;
+    font-size: var(--p);
 }
 .flex-column {
     display: flex;
@@ -156,6 +156,14 @@ nav:last-child {
 }
 .explore-icons:last-child {
     margin-right: 3rem;
+}
+/* community style shets*/
+.community-section {
+    clip-path: polygon(0% 0%, 100% 10%, 100% 85%, 0% 100%);
+    background: var(--ddd);
+    z-index: -1;
+    height: 44rem;
+    overflow: hidden;
 }
 @media only screen and (max-width: 855px) {
     .explore-section-container {
@@ -207,7 +215,7 @@ nav:last-child {
         z-index: 2;
     }
     .menu-container > a:first-child {
-        margin-top: 3rem;
+        margin-top: 4rem;
     }
     .menu-container > a {
         display: block;
@@ -219,7 +227,8 @@ nav:last-child {
         filter: brightness(120%);
     }
     .search-container-for-phone {
-        display: inline-block;
+        margin-top: 1rem;
+        display: inline-flex;
         position: absolute;
         top: 0;
         right: auto;
@@ -227,10 +236,10 @@ nav:last-child {
         transform: translateX(-50%);
     }
     .searrch-txt {
-        width: auto;
+        width: 9rem;
     }
     .search-container:hover > .searrch-txt {
-        width: auto;
+        width: 9rem;
         border-bottom: var(--www) 1px solid;
     }
 
@@ -238,14 +247,10 @@ nav:last-child {
         margin: 2rem 2rem 0 2rem;
         justify-content: space-between;
     }
-    .search-contact-container {
-        margin: 0;
-    }
-
-    .explore-section-container {
-    }
     .explore {
         font-size: var(--h2-phone);
+        align-self: flex-end;
+        margin-right: 2rem;
     }
     .black-bk {
         height: 47rem;
@@ -259,5 +264,18 @@ nav:last-child {
     .explore-icons-for-phone {
         width: 18rem;
         margin: 1rem auto 0rem auto;
+    }
+    .explore-section-container {
+        overflow: visible;
+        position: absolute;
+    }
+    .flex-column {
+        margin-top: -4rem;
+    }
+    .explore-txt {
+        margin-left: 1rem;
+    }
+    .community-section {
+        margin-top: 30rem;
     }
 }
