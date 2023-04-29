@@ -80,9 +80,7 @@ nav:last-child {
     font-size: 1.3rem;
     color: var(--green);
 }
-.make-it-bigger {
-    font-size: 2rem;
-}
+
 .search-container {
     margin-right: 1rem;
 }
@@ -100,7 +98,7 @@ nav:last-child {
     width: 0rem;
 }
 .search-container:hover > .searrch-txt {
-    width: 9rem;
+    width: 8rem;
     border-bottom: var(--www) 1px solid;
 }
 .for-phone {
@@ -109,7 +107,6 @@ nav:last-child {
 .for-logo-and-moon {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap-reverse;
     align-items: center;
     overflow: hidden;
     margin: auto 4rem;
@@ -119,6 +116,7 @@ nav:last-child {
     height: auto;
     animation: rotate 17s linear infinite, down 3s linear;
     z-index: 0;
+    order: 1;
 }
 .logo {
     width: 20rem;
@@ -138,13 +136,12 @@ nav:last-child {
 
 /*Section 1 style*/
 .explore-section-container {
-    margin-top: -2rem;
-    z-index: 4;
+    margin-top: 0rem;
 }
 .explore {
     font-size: var(--h2);
     float: right;
-    margin-right: 10%;
+    margin-right: 15%;
 }
 @media only screen and (max-width: 855px) {
     .moon {
@@ -153,18 +150,23 @@ nav:last-child {
     .logo {
         width: 12rem;
         margin-right: 6rem;
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
     .for-logo-and-moon {
-        flex-wrap: wrap-reverse;
-        margin-top: 5rem;
-        justify-content: space-around;
+        text-align: center;
+        display: block;
     }
 }
 @media only screen and (max-width: 600px) {
     .no-phone,
     .menu-container {
         display: none;
+    }
+    .make-it-bigger-1 {
+        font-size: 1.7rem;
+    }
+    .make-it-bigger {
+        font-size: 2rem;
     }
     .for-phone {
         display: block;
@@ -215,14 +217,7 @@ nav:last-child {
     .search-contact-container {
         margin: 0;
     }
-    .for-logo-and-moon {
-        flex-wrap: wrap-reverse;
-        margin-top: 1rem;
-        justify-content: space-around;
-    }
-    .logo {
-        margin-top: 4rem;
-    }
+
     .explore-section-container {
     }
     .explore {
