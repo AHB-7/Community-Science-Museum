@@ -9,6 +9,10 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+body {
+    width: 100%;
+    height: fit-content;
+}
 :root {
     --green: #62ff68;
     --www: white;
@@ -32,7 +36,7 @@ p {
 .black-bk {
     z-index: -1;
     height: 44rem;
-    background: #0b0b0d;
+    background: var(--ddd);
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
     overflow: hidden;
 }
@@ -159,7 +163,7 @@ nav:last-child {
 }
 /* community style shets*/
 .community-section {
-    clip-path: polygon(0% 0%, 100% 10%, 100% 85%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0 90%);
     background: var(--ddd);
     z-index: -1;
     height: 44rem;
