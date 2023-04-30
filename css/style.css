@@ -137,14 +137,16 @@ nav:last-child {
     align-items: center;
     margin-top: 0rem;
     height: fit-content;
+    max-width: 80rem;
 }
 .explore {
     font-size: var(--h2);
     margin-bottom: 2rem;
 }
 .explore-txt {
-    max-width: 26rem;
+    max-width: 24rem;
     font-size: var(--p);
+    margin-right: 1rem;
 }
 .flex-column {
     display: flex;
@@ -154,13 +156,22 @@ nav:last-child {
 .flex-row {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
+
 .explore-icons {
     max-width: 10rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
+    transition: 0.5s;
 }
-.explore-icons:last-child {
+.explore-icons-last {
+    max-width: 10rem;
     margin-right: 3rem;
+    transition: 0.5s;
+}
+.explore-icons:hover,
+.explore-icons-last:hover {
+    max-width: 11rem;
 }
 /* community style shets*/
 .community-section {
@@ -175,6 +186,7 @@ nav:last-child {
         flex-wrap: wrap-reverse;
         margin-top: 1rem;
         height: fit-content;
+        max-width: 100%;
     }
     .moon {
         max-width: 19rem;
@@ -191,6 +203,10 @@ nav:last-child {
     }
     .flex-row {
         margin-top: -4rem;
+    }
+
+    .explore-icons:last-child {
+        margin-right: 1rem;
     }
 }
 
@@ -268,7 +284,14 @@ nav:last-child {
     }
     .explore-icons-for-phone {
         width: 18rem;
+        height: 5rem;
         margin: 1rem auto 0rem auto;
+        transition: 0.5s;
+    }
+    .explore-icons-for-phone:hover {
+        width: 20rem;
+        height: 6rem;
+        box-shadow: 0px 10px 15px 0px #000;
     }
     .explore-section-container {
         overflow: visible;
