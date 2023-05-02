@@ -9,10 +9,12 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-html,
-body {
+section {
     width: 100vw;
-    height: fit-content;
+}
+body {
+    width: 100%;
+    height: 100%;
 }
 :root {
     --green: #62ff68;
@@ -354,17 +356,14 @@ nav:last-child {
     }
     .explore-section-container {
         overflow: visible;
-        position: absolute;
     }
     .flex-column {
-        margin-top: -4rem;
+        margin-bottom: 2rem;
     }
     .explore-txt {
         margin-left: 1rem;
     }
     .community-section {
-        margin-top: 30rem;
-        width: 100%;
     }
     .white {
         margin: 0 auto;
@@ -375,6 +374,11 @@ nav:last-child {
         margin: 3rem auto 0;
     }
     .last-section {
-        margin-top: 73rem;
+        height: fit-content;
+    }
+    .main-btn-big {
+        font-size: 1.5rem;
+        height: 3rem;
+        margin-top: 0.5rem;
     }
 }
