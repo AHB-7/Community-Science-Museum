@@ -110,7 +110,7 @@ nav:last-child {
 .moon {
     max-width: 23rem;
     height: auto;
-    animation: rotate 17s linear infinite, down 3s linear;
+    animation: down 2s linear;
     z-index: 0;
     order: 1;
 }
@@ -119,14 +119,6 @@ nav:last-child {
     margin-left: 1.3rem;
     animation: down linear 2s;
     margin-top: 13rem;
-}
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 /*Section 1 style*/
@@ -297,10 +289,13 @@ a {
         margin: 0 auto;
     }
     .half-txt {
-        margin: 0 1rem;
+        margin: 0 auto;
     }
     .white-h2 {
         margin: 1rem 0;
+    }
+    .last-btn-container {
+        margin: 0;
     }
 }
 
@@ -393,8 +388,11 @@ a {
     .flex-column {
         margin-bottom: 2rem;
     }
+    .white-h2 {
+        margin-bottom: 2.5rem;
+    }
     .explore-txt {
-        margin-left: 1rem;
+        margin: -2rem 2rem 2rem 2rem;
     }
     .white {
         margin: 0 auto;
@@ -404,10 +402,12 @@ a {
         max-width: 20rem;
         margin: 3rem auto 0;
     }
-
     .main-btn-big {
         font-size: 1.5rem;
         height: 3rem;
-        margin-top: 0.5rem;
+        margin-top: 2rem;
+    }
+    .half-txt {
+        margin: auto 2rem;
     }
 }
