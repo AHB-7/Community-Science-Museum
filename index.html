@@ -14,7 +14,7 @@
         ></script>
     </head>
     <body>
-        <header class="black-bk">
+        <header class="black-bk" id="1">
             <nav>
                 <input
                     type="checkbox"
@@ -130,9 +130,9 @@
                     </p>
                 </div>
             </section>
-            <section class="explore-section-container community-section">
+            <section class="community-section">
                 <div>
-                    <h2 class="white white-h2">Community</h2>
+                    <h2 class="white white-h2" style="margin: 0">Community</h2>
                     <p class="white">
                         Come join us at the Community Science Museum where we’re
                         committed to making science accessible to all.
@@ -142,11 +142,13 @@
                         >Get Involved
                     </a>
                 </div>
-                <img
-                    src="assets/library-transformed.png  "
-                    alt=" library Image with a person in it"
-                    class="library"
-                />
+                <div>
+                    <img
+                        src="assets/library-transformed.png  "
+                        alt=" library Image with a person in it"
+                        class="library"
+                    />
+                </div>
             </section>
             <section class="last-section">
                 <div class="block">
@@ -161,14 +163,19 @@
                     </p>
                 </div>
                 <div class="last-btn-container">
-                    <a href="html/exhibitions-News.html" class="main-btn main-btn-big"
+                    <a
+                        href="html/exhibitions-News.html"
+                        class="main-btn main-btn-big"
                         >Discover More</a
                     >
                 </div>
+                <div>
+                    <a href="#1" class="last-btn-container up"
+                        ><i class="fa-solid fa-circle-up make-it-bigger-up"></i
+                    ></a>
+                </div>
             </section>
         </main>
-        <footer>
-            
-        </footer>
+        <footer></footer>
     </body>
 </html>

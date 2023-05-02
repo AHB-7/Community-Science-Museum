@@ -2,20 +2,18 @@
     font-family: play;
     src: url(../Font/Play-Bold.ttf);
 }
+html {
+    scroll-behavior: smooth;
+}
 
-*,
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-}
-section {
-    width: 100vw;
-}
-body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
+
 :root {
     --green: #62ff68;
     --www: white;
@@ -28,7 +26,6 @@ body {
 }
 h1,
 h2,
-h3,
 h3,
 p {
     font-family: play, sans-serif;
@@ -137,13 +134,11 @@ nav:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0rem;
     height: fit-content;
-    max-width: 100rem;
 }
 .white-h2 {
     font-size: var(--h2);
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
 }
 .explore-txt {
     max-width: 24rem;
@@ -153,7 +148,6 @@ nav:last-child {
 .flex-column {
     display: flex;
     flex-direction: column;
-
     align-items: center;
     height: 20rem;
 }
@@ -182,13 +176,23 @@ nav:last-child {
     clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0 90%);
     background: var(--ddd);
     z-index: -1;
-    height: 44rem;
+    height: 40rem;
     overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.community-h2 {
+    margin-left: 1rem;
+    color: var(--www);
+    font-size: var(--h2);
 }
 .white {
     color: var(--www);
     max-width: 24rem;
-    margin-left: 3rem;
 }
 .library {
     max-width: 30rem;
@@ -199,6 +203,7 @@ nav:last-child {
 }
 .block {
     display: block;
+    max-width: 40rem;
     margin-left: 14%;
 }
 .main-btn {
@@ -229,7 +234,25 @@ nav:last-child {
     margin-top: 4rem;
 }
 .last-section {
-    height: 90vh;
+    height: fit-content;
+}
+.last-section:first-child {
+    margin-bottom: 0;
+}
+.make-it-bigger-up {
+    display: block;
+    font-size: 3rem;
+    color: var(--green);
+    transition: 0.5s;
+}
+.make-it-bigger-up:hover {
+    color: var(--ddd);
+}
+.up {
+    margin: 0.1rem auto;
+}
+a {
+    text-decoration: none;
 }
 @media only screen and (max-width: 855px) {
     .explore-section-container {
@@ -263,11 +286,21 @@ nav:last-child {
     }
     .community-section {
         height: 40rem;
-        margin-top: 0rem;
     }
     .library {
         max-width: 26rem;
         margin-top: 4rem;
+    }
+
+    .block {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .half-txt {
+        margin: 0 1rem;
+    }
+    .white-h2 {
+        margin: 1rem 0;
     }
 }
 
@@ -363,8 +396,6 @@ nav:last-child {
     .explore-txt {
         margin-left: 1rem;
     }
-    .community-section {
-    }
     .white {
         margin: 0 auto;
         text-align: center;
@@ -373,9 +404,7 @@ nav:last-child {
         max-width: 20rem;
         margin: 3rem auto 0;
     }
-    .last-section {
-        height: fit-content;
-    }
+
     .main-btn-big {
         font-size: 1.5rem;
         height: 3rem;
