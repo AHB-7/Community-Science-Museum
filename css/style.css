@@ -236,6 +236,7 @@ nav:last-child {
     font-size: 3rem;
     color: var(--green);
     transition: 0.5s;
+    margin: 0rem auto 0 auto;
 }
 .make-it-bigger-up:hover {
     color: var(--ddd);
@@ -245,6 +246,19 @@ nav:last-child {
 }
 a {
     text-decoration: none;
+}
+.sosial-media {
+    font-size: 2.2rem;
+    margin: 0.5rem 0.2rem;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem 0 0 0;
+    background-color: var(--ddd);
+    height: 4rem;
 }
 @media only screen and (max-width: 855px) {
     .explore-section-container {
@@ -395,7 +409,7 @@ a {
         margin: -2rem 2rem 2rem 2rem;
     }
     .white {
-        margin: 0 auto;
+        margin: 0 2rem;
         text-align: center;
     }
     .library {
@@ -409,5 +423,17 @@ a {
     }
     .half-txt {
         margin: auto 2rem;
+    }
+    footer {
+        height: fit-content;
+    }
+    footer > div {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0.5rem auto;
+    }
+    footer div:first-child {
+        margin: 1rem auto;
     }
 }
