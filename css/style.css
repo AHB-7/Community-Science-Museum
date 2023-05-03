@@ -5,7 +5,10 @@
 html {
     scroll-behavior: smooth;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -260,6 +263,12 @@ footer {
     height: 4rem;
 }
 @media only screen and (max-width: 855px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
     .explore-section-container {
         flex-wrap: wrap-reverse;
         margin-top: 1rem;
