@@ -39,7 +39,6 @@ body {
     z-index: -1;
     height: 44rem;
     background: var(--ddd);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
     margin-top: 0;
 }
 @keyframes down {
@@ -165,7 +164,6 @@ nav:last-child {
 }
 /* community style shets*/
 .community-section {
-    clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0 90%);
     background: var(--ddd);
     z-index: -1;
     height: 40rem;
