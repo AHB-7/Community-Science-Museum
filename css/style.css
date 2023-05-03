@@ -37,10 +37,10 @@ p {
 
 .black-bk {
     z-index: -1;
-    height: 44rem;
+    height: 80vh;
     background: var(--ddd);
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
-    overflow: hidden;
+    margin-top: 0;
 }
 @keyframes down {
     0% {
@@ -58,7 +58,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    margin: 2rem auto;
+    height: 6rem;
 }
 .search-contact-container {
     display: flex;
@@ -376,7 +376,7 @@ footer {
     }
 
     nav {
-        margin: 2rem 2rem 0 2rem;
+        margin: 0 2rem 0rem 2rem;
         justify-content: space-between;
     }
     .white-h2 {

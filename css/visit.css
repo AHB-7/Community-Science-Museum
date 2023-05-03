@@ -1,3 +1,38 @@
+@font-face {
+    font-family: play;
+    src: url(../Font/Play-Bold.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+:root {
+    --green: #62ff68;
+    --www: white;
+    --ddd: #0b0b0d;
+    --h1: 4.5rem;
+    --h1-phone: 4.5rem;
+    --h2: 3.5rem;
+    --h2-phone: 2.5rem;
+    --p: 1.2rem;
+}
+h1,
+h2,
+h3,
+p {
+    font-family: play, sans-serif;
+}
 body {
     width: 100vw;
     margin: 0;
@@ -5,5 +40,12 @@ body {
 }
 .shorter {
     clip-path: polygon(0 0, 100% 0, 100% 10%, 0 15%);
+ overflow: auto;
 }
-.contact-oother-pages{margin: auto 3rem;}
+.contact-oother-pages {
+    margin: auto 3rem;
+}
+h1{
+    font-size: var(--h1);
+    color: var(--ddd);
+}
