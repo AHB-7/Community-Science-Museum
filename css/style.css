@@ -5,16 +5,17 @@
 html {
     scroll-behavior: smooth;
 }
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
 }
 
 :root {
@@ -106,7 +107,6 @@ nav:last-child {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    overflow: hidden;
     margin: auto 4rem;
 }
 .moon {
@@ -212,7 +212,7 @@ nav:last-child {
     margin: 3rem 2rem;
     justify-content: center;
     align-items: center;
-    width: 9rem;
+    width: 12rem;
 }
 
 .main-btn-big {
