@@ -37,7 +37,7 @@ p {
 
 .black-bk {
     z-index: -1;
-    height: 80vh;
+    height: 44rem;
     background: var(--ddd);
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
     margin-top: 0;
