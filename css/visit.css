@@ -1,9 +1,22 @@
 @font-face {
     font-family: play;
     src: url(../Font/Play-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: play-1;
+    src: url(../Font/Play-Regular.ttf);
+    font-weight: lighter;
+    font-style: normal;
 }
 html {
     scroll-behavior: smooth;
+    font-family: play, sans-serif;
+    background: white no-repeat;
+    margin: 0;
+    padding: 0;
 }
 * {
     margin: 0;
@@ -86,7 +99,7 @@ h2 {
     justify-content: center;
     align-items: center;
     max-width: 15rem;
-    margin: 6rem auto 0 auto;
+    margin: 2rem auto 0 auto;
 }
 .margin-days {
     margin: 4rem auto;
@@ -104,18 +117,51 @@ h2 {
 }
 .section-map {
     background-color: var(--ddd);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    margin: auto;
-    padding: 2rem;
 }
 .map {
-    margin: 1rem auto;
+    margin: 2rem auto;
     height: 15rem;
     width: auto;
 }
 .white {
     color: var(--green);
-    margin: 1rem auto;
+    margin: 0;
+}
+.center-text {
+    margin: 3rem auto 2rem auto;
+    text-align: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pris-txt {
+    font-size: 1.2rem;
+    max-width: 34rem;
+    margin: 0rem auto;
+    text-align: center;
+    font-family: play-1;
+}
+.pris-txt > strong {
+    color: rgb(255, 0, 0);
+}
+.up {
+    background-color: var(--ddd);
+    margin: 0;
+}
+footer {
+    margin: 0;
+}
+.make-it-bigger-up:hover{
+    color: white;
 }
 @media only screen and (max-width: 600px) {
     h1 {
@@ -158,5 +204,8 @@ h2 {
     }
     .margin-0 {
         margin-top: 0;
+    }
+    .pris-txt {
+        margin: 1rem 2rem;
     }
 }

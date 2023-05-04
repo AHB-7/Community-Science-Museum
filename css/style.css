@@ -2,16 +2,18 @@
     font-family: play;
     src: url(../Font/Play-Bold.ttf);
     font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: play;
+    font-family: play-1;
     src: url(../Font/Play-Regular.ttf);
-    font-weight: normal;
+    font-weight: lighter;
+    font-style: normal;
 }
 html {
     scroll-behavior: smooth;
-    font-family: play, sans-serif;
+    font-family: play-1, sans-serif;
     background: white no-repeat;
     margin: 0;
     padding: 0;
@@ -138,6 +140,7 @@ nav:last-child {
 .white-h2 {
     font-size: var(--h2);
     margin-bottom: 1.2rem;
+    font-family: play;
 }
 .explore-txt {
     max-width: 24rem;
@@ -185,7 +188,8 @@ nav:last-child {
 }
 
 .community-h2 {
-    margin-left: 1rem;
+    margin: 0 auto;
+    text-align: center;
     color: var(--www);
     font-size: var(--h2);
 }
@@ -217,6 +221,7 @@ nav:last-child {
     justify-content: center;
     align-items: center;
     width: 12rem;
+    font-family: play;
 }
 
 .main-btn-big {
