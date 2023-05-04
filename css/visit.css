@@ -71,8 +71,6 @@ h1 {
 .a-container {
     width: fit-content;
 }
-.section-2 {
-}
 h2 {
     font-size: var(--h2);
     max-width: 14rem;
@@ -104,10 +102,25 @@ h2 {
     margin: 1.4rem 2.6rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1));
 }
+.section-map {
+    background-color: var(--ddd);
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+}
+.map {
+    margin: 1rem auto;
+    height: 15rem;
+    width: auto;
+}
+.white {
+    color: var(--green);
+    margin: 1rem auto;
+}
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: var(--h1-phone);
-        margin-top: 3rem;
+        margin-top: 5.2rem;
     }
     h2 {
         font-size: var(--h2-phone);
@@ -137,11 +150,11 @@ h2 {
     }
     .flex-row-day {
         margin: 0.8rem;
-        height: 2.7rem;
-        width: 14rem;
+        height: 3rem;
+        width: 15rem;
     }
     .flex-row-opnings-hours {
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
     .margin-0 {
         margin-top: 0;

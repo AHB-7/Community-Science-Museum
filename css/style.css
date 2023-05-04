@@ -1,6 +1,13 @@
 @font-face {
     font-family: play;
     src: url(../Font/Play-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: play;
+    src: url(../Font/Play-Regular.ttf);
+    font-weight: normal;
 }
 html {
     scroll-behavior: smooth;
@@ -258,6 +265,13 @@ footer {
     margin: 1rem 0 0 0;
     background-color: var(--ddd);
     height: 4rem;
+}
+.adress {
+    font-size: 1rem;
+    color: var(--www);
+    font-weight: normal;
+    line-height: 3rem;
+    opacity: 80%;
 }
 @media only screen and (max-width: 855px) {
     .explore-section-container {
