@@ -6,8 +6,8 @@ html {
     scroll-behavior: smooth;
     font-family: play, sans-serif;
     background: white no-repeat;
-    width: 100%;
-    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 * {
@@ -18,8 +18,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    min-height: 100vh;
 }
 
 :root {
@@ -43,6 +41,7 @@ body {
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
     margin-top: 0;
 }
+
 @keyframes down {
     0% {
         transform: translateY(-1000px);
