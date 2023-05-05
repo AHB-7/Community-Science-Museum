@@ -46,7 +46,6 @@ body {
     z-index: -1;
     height: 44rem;
     background: var(--ddd);
-    box-shadow: 0 0 0 10px white;
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
     margin-top: 0;
 }
@@ -278,7 +277,7 @@ footer {
     line-height: 3rem;
     opacity: 80%;
 }
-@media only screen and (max-width: 855px) {
+@media only screen and (max-width: 880px) {
     .explore-section-container {
         flex-wrap: wrap-reverse;
         margin-top: 1rem;
@@ -322,6 +321,7 @@ footer {
     }
     .half-txt {
         margin: 0 auto;
+        max-width: 24rem;
     }
     .white-h2 {
         margin: 1rem 0;
@@ -329,6 +329,7 @@ footer {
     .last-btn-container {
         margin: 0;
     }
+   
 }
 
 @media only screen and (max-width: 600px) {
@@ -355,6 +356,7 @@ footer {
         margin-top: 4rem;
         background-color: var(--ddd);
         z-index: 2;
+        border-radius: 0 0rem 1rem 1rem;
     }
     .menu-container > a:first-child {
         margin-top: 4rem;
@@ -362,7 +364,7 @@ footer {
     .menu-container > a {
         display: block;
         text-align: center;
-        margin-top: 0.5rem;
+        margin-top: 1.3rem;
     }
     .menu-btn:hover {
         cursor: pointer;
@@ -427,7 +429,7 @@ footer {
         margin: -2rem 2rem 2rem 2rem;
     }
     .white {
-        margin: 0 2rem;
+        margin: 0 auto;
         text-align: center;
     }
     .library {
@@ -435,12 +437,14 @@ footer {
         margin: 3rem auto 0;
     }
     .main-btn-big {
-        font-size: 1.5rem;
-        height: 3rem;
+        font-size: 2rem;
+        height: 4rem;
+        width: 16rem;
         margin-top: 2rem;
     }
     .half-txt {
-        margin: auto 2rem;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
     footer {
         height: fit-content;

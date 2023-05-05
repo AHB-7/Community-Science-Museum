@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+    font-family: play, sans-serif;
+    background: white no-repeat;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --green: #62ff68;
+    --www: white;
+    --ddd: #0b0b0d;
+    --h1: 4rem;
+    --h1-phone: 3.5rem;
+    --h2: 3rem;
+    --h2-phone: 2.5rem;
+    --p: 1.2rem;
+}
+.shorter-1 {
+    background-color: #0b0b0d;
+    height: 23rem;
+    border-radius: 0 0rem 1rem 1rem;
+}
+.h1-contact {
+    font-size: var(--h1);
+    width: 39rem;
+    color: var(--green);
+    text-align: left;
+    margin: 0;
+}
+.ways {
+    font-size: 10rem;
+    color: white;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    max-width: 80rem;
+    padding: 4rem 8rem 0 8rem;
+    margin: 0 auto;
+}
+.contact-oother-pages {
+    margin: 0;
+}
+.sosial-media-contact-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sosial-media-contact {
+    color: var(--green);
+    font-size: 4rem;
+    margin-left: 1rem;
+}
+.center-it {
+    align-items: center;
+    margin: 0rem auto 4rem auto;
+}
+.contact-h2 {
+    font-size: var(--h2);
+    width: 35rem;
+}
+.flex-input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 4rem 0;
+}
+.flex-black {
+    background-color: var(--ddd);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.over-txt {
+    display: block;
+    font-size: 1rem;
+    color: var(--www);
+}
+#message {
+    width: 20rem;
+    height: 10rem;
+}
+.input {
+    width: 16rem;
+    height: 1.8rem;
+    border: 1.2px var(--green) solid;
+    margin: 1rem auto;
+    border-radius: 0.2rem;
+}
+.white-h2 {
+    margin-top: 4rem;
+    color: var(--www);
+}
+.up {
+    background-color: var(--ddd);
+    margin: 0;
+}
+.make-it-bigger-up:hover {
+    color: white;
+}
+footer {
+    margin: 0;
+}
+@media only screen and (max-width: 950px) {
+    .flex-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+        height: 16rem;
+    }
+    .h1-contact {
+        font-size: var(--h1-phone);
+        max-width: 30rem;
+        margin: 0;
+    }
+    .ways {
+        font-size: 7rem;
+    }
+    .contact-h2 {
+        font-size: var(--h2-phone);
+        text-align: center;
+        max-width: 16rem;
+    }
+    .center-it {
+        justify-content: center;
+        gap: 2rem;
+        margin: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .shorter-1 {
+        height: 30rem;
+    }
+    .flex-row {
+        height: 20rem;
+    }
+    .h1-contact {
+        font-size: var(--h2-phone);
+        width: 17rem;
+        text-align: center;
+    }
+    .ways {
+        font-size: 7rem;
+    }
+    .flex-input {
+        flex-direction: column;
+    }
+    #message {
+        width: 16rem;
+        height: 10rem;
+    }
+    .white-h2 {
+        margin: 4rem auto 2rem auto;
+        text-align: center;
+    }
+}
