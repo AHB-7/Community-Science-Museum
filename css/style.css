@@ -277,6 +277,10 @@ footer {
     line-height: 3rem;
     opacity: 80%;
 }
+.adress-1{
+    width: 10rem;
+    text-align: center;
+}
 @media only screen and (max-width: 880px) {
     .explore-section-container {
         flex-wrap: wrap-reverse;
@@ -329,7 +333,6 @@ footer {
     .last-btn-container {
         margin: 0;
     }
-   
 }
 
 @media only screen and (max-width: 600px) {

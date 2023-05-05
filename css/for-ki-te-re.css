@@ -1,0 +1,72 @@
+html {
+    scroll-behavior: smooth;
+    font-family: play-1, sans-serif;
+    background: white no-repeat;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --green: #62ff68;
+    --www: white;
+    --ddd: #0b0b0d;
+    --h1: 4rem;
+    --h1-phone: 3.5rem;
+    --h2: 3rem;
+    --h2-phone: 2.5rem;
+    --p: 1.2rem;
+}
+.for-kids-h1 {
+    color: white;
+    text-align: center;
+}
+.ktr-img {
+    font-size: 6rem;
+}
+.flex-ktr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+.txt-width {
+    max-width: 40rem;
+    text-align: center;
+}
+.bk-pic {
+    background: url(../assets/background-pic.png) no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.white-bk {
+    background-color: var(--www);
+    max-width: 37rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+.black {
+    background-color: var(--ddd);
+    width: 100%;
+    margin: 0;
+    padding: 8rem 1rem 2rem 1rem;
+}
+.main-btn-big{
+    margin: 2rem auto auto  auto; 
+}
+.last-btn-container{
+    margin: 0;
+}
+footer{
+    margin: 0;
+}
