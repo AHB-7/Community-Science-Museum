@@ -20,12 +20,19 @@ html {
     height: 23rem;
     border-radius: 0 0rem 1rem 1rem;
 }
+.shorter {
+    height: 20rem;
+}
 .h1-contact {
     font-size: var(--h1);
     width: 39rem;
     color: var(--green);
     text-align: left;
     margin: 0;
+}
+.get-involved {
+    width: 25rem;
+    text-align: center;
 }
 .ways {
     font-size: 10rem;
@@ -101,6 +108,33 @@ html {
 .make-it-bigger-up:hover {
     color: white;
 }
+.flex-column-get-involvd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem;
+}
+.flex-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 60rem;
+    gap: 4rem;
+}
+.get-involved-img {
+    width: 13rem;
+}
+.get-involved-txt {
+    max-width: 35rem;
+}
+.for-involved:hover {
+    color: black;
+}
+.up-involove{
+    margin: 0;
+}
 footer {
     margin: 0;
 }
@@ -113,6 +147,9 @@ footer {
         margin: 0 auto;
         padding: 0;
         height: 16rem;
+    }
+    .shorter {
+        height: 15rem;
     }
     .h1-contact {
         font-size: var(--h1-phone);
@@ -138,9 +175,13 @@ footer {
     .shorter-1 {
         height: 30rem;
     }
+    .shorter {
+        height: 13rem;
+    }
     .flex-row {
         height: 20rem;
     }
+
     .h1-contact {
         font-size: var(--h2-phone);
         width: 17rem;
@@ -159,5 +200,11 @@ footer {
     .white-h2 {
         margin: 4rem auto 2rem auto;
         text-align: center;
+    }
+    .flex-1 {
+        flex-direction: column;
+    }
+    .flex-1:nth-child(2) {
+        flex-direction: column-reverse;
     }
 }
