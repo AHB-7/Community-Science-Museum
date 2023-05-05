@@ -64,6 +64,12 @@ h1 {
 .offers-img {
     max-width: 11rem;
     margin: 0.5rem 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.offers-img:hover {
+    transform: translate3d(2px, -5px, 10px);
+    filter: drop-shadow(-6px 5px 5px #464545) brightness(110%) ;
 }
 .offers-container {
     display: grid;
@@ -160,7 +166,7 @@ h2 {
 footer {
     margin: 0;
 }
-.make-it-bigger-up:hover{
+.make-it-bigger-up:hover {
     color: white;
 }
 @media only screen and (max-width: 600px) {

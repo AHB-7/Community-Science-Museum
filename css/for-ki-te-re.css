@@ -85,8 +85,16 @@ footer {
 .main-btn-big {
     transition: 0.5s;
 }
-.main-btn-big:hover {
+.research-logo{
+    color: rgb(255, 32, 32);
+    margin-top: 1rem;
+}
+.white-big-btn{
+    max-width: 40rem;
+}
+.white-big-btn:hover {
     background-color: var(--www);
+    color: var(--ddd);
 }
 .main-btn-big-white:hover {
     background-color: var(--ddd);
