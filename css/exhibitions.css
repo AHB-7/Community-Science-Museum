@@ -1,0 +1,117 @@
+html {
+    scroll-behavior: smooth;
+    font-family: play-1, sans-serif;
+    background: var(--www) no-repeat;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --green: #62ff68;
+    --www: white;
+    --ddd: #0b0b0d;
+    --h1: 4rem;
+    --h1-phone: 3rem;
+    --h2: 2.5rem;
+    --h2-phone: 2rem;
+    --p: 1.2rem;
+}
+.for-exh-h1 {
+    display: block;
+    float: right;
+    width: 20rem;
+    font-size: var(--h1);
+    color: var(--green);
+    margin-right: 15%;
+}
+.bk-img {
+    background: url(../assets/background-pic.png) center no-repeat;
+    width: 100%;
+    height: 40rem;
+    margin: -1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+}
+.head-for-news {
+    font-size: 3.4rem;
+    margin: 2rem auto;
+    animation: slide-right 5s linear infinite;
+}
+@keyframes slide-right {
+    0% {
+        transform: translateX(-800px);
+    }
+    100% {
+        transform: translateX(800px);
+    }
+}
+.news-container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 0rem 2rem;
+    margin: 0 auto;
+    gap: 2rem;
+}
+.bk-smal-container {
+    height: 28rem;
+    width: 16rem;
+    background-color: black;
+}
+.bk-1 {
+    background: url(../assets/musum.png) center no-repeat;
+    height: 18rem;
+    width: 16rem;
+}
+.bk-2 {
+    background: url(../assets/old-man.png) center no-repeat;
+    height: 18rem;
+    width: 16rem;
+}
+.bk-3 {
+    background: url(../assets/seince.png) center no-repeat;
+    height: 18rem;
+    width: 16rem;
+}
+.news-h2 {
+    font-size: var(--h2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    color: var(--www);
+    font-family: play;
+    height: 10rem;
+}
+.blk {
+    color: black;
+}
+.blu {
+    background-color: #215972;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .shorter {
+        height: 20rem;
+    }
+    .for-exh-h1 {
+    }
+}
+@media only screen and (max-width: 600px) {
+    .shorter {
+        height: 20rem;
+    }
+    .for-exh-h1 {
+        font-size: var(--h1-phone);
+        margin: 0 auto;
+    }
+    .h1-container {
+        text-align: center;
+        width: 100%;
+        display: flex;
+    }
+}
