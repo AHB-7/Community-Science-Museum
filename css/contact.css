@@ -89,6 +89,7 @@ html {
 #message {
     width: 20rem;
     height: 10rem;
+    margin-bottom: 2rem;
 }
 .input {
     width: 16rem;
@@ -132,7 +133,7 @@ html {
 .for-involved:hover {
     color: black;
 }
-.up-involove{
+.up-involove {
     margin: 0;
 }
 footer {

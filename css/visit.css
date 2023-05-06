@@ -69,7 +69,7 @@ h1 {
 
 .offers-img:hover {
     transform: translate3d(2px, -5px, 10px);
-    filter: drop-shadow(-6px 5px 5px #464545) brightness(110%) ;
+    filter: drop-shadow(-6px 5px 5px #464545) brightness(110%);
 }
 .offers-container {
     display: grid;
@@ -166,6 +166,11 @@ h2 {
 footer {
     margin: 0;
 }
+footer > div > .white,
+.adress-1 {
+    margin: 0 auto;
+    color: var(--www);
+}
 .make-it-bigger-up:hover {
     color: white;
 }
@@ -213,5 +218,10 @@ footer {
     }
     .pris-txt {
         margin: 1rem 2rem;
+    }
+    footer > div > .white,
+    .adress-1 {
+        margin: 0 auto;
+        color: var(--www);
     }
 }
