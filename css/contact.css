@@ -1,20 +1,3 @@
-html {
-    scroll-behavior: smooth;
-    font-family: play-1, sans-serif;
-    background: white no-repeat;
-    margin: 0;
-    padding: 0;
-}
-:root {
-    --green: #62ff68;
-    --www: white;
-    --ddd: #0b0b0d;
-    --h1: 4rem;
-    --h1-phone: 3.5rem;
-    --h2: 3rem;
-    --h2-phone: 2.5rem;
-    --p: 1.2rem;
-}
 .shorter-1 {
     background-color: #0b0b0d;
     height: 23rem;

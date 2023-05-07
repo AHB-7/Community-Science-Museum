@@ -1,20 +1,4 @@
-html {
-    scroll-behavior: smooth;
-    font-family: play-1, sans-serif;
-    background: var(--www) no-repeat;
-    margin: 0;
-    padding: 0;
-}
-:root {
-    --green: #62ff68;
-    --www: white;
-    --ddd: #0b0b0d;
-    --h1: 4rem;
-    --h1-phone: 3.5rem;
-    --h2: 3rem;
-    --h2-phone: 2.5rem;
-    --p: 1.2rem;
-}
+
 .for-kids-h1,
 .for-researches-h1 {
     color: var(--www);
