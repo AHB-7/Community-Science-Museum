@@ -29,6 +29,8 @@ html {
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 :root {
@@ -298,10 +300,10 @@ a {
     margin: 0.5rem 0.2rem;
 }
 footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 1rem 0 0 0;
     background-color: var(--ddd);
     height: 4rem;
@@ -316,6 +318,10 @@ footer {
 .adress-1 {
     width: 10rem;
     text-align: center;
+}
+.center-content {
+    text-align: center;
+    margin: 0 auto;
 }
 @media only screen and (max-width: 880px) {
     .explore-section-container {
@@ -368,6 +374,14 @@ footer {
     }
     .last-btn-container {
         margin: 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    footer .center-content:nth-child(2) {
+        margin: 0.5rem auto;
     }
 }
 
@@ -484,17 +498,5 @@ footer {
     .half-txt {
         margin: 0 auto;
         padding: 0 2rem;
-    }
-    footer {
-        height: fit-content;
-    }
-    footer > div {
-        width: 100%;
-        display: block;
-        text-align: center;
-        margin: 0.5rem auto;
-    }
-    footer div:first-child {
-        margin: 1rem auto;
     }
 }
