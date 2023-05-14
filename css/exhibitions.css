@@ -102,7 +102,7 @@
     justify-content: center;
     width: fit-content;
     margin: 3rem;
-    width: 80%;
+    width: 70%;
     gap: 2rem;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -198,6 +198,9 @@
     .bk- {
         width: 15rem;
     }
+    .flex-exb {
+        width: 80%;
+    }
 }
 @media only screen and (max-width: 600px) {
     .shorter {
@@ -214,5 +217,8 @@
     }
     .flex-exb {
         padding: 3rem 0;
+    }
+    .flex-exb {
+        width: 80%;
     }
 }
