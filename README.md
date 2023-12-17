@@ -49,9 +49,7 @@ git clone https://github.com/AHB-7/blog.git
 
 2. Open the index.html file using Visual Studio Code (VSC).
 
-3. Navigate to the js folder.
-
-4. Start to create the needed functionality wanted to add and start testing.
+3. Navigate to the need html to start make the needed changs.
 
 ## Contact
 
